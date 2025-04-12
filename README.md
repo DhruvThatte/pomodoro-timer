@@ -15,7 +15,7 @@ A simple and elegant Pomodoro Timer built using **React**, with light/dark theme
 ## 📸 Preview
 
 ![Pomodoro Preview](./screenshot.png)  
-> Screenshot of the dark mode UI (Replace this with your actual screenshot)
+> Screenshot of the dark mode UI 
 
 ---
 
