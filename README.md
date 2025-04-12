@@ -22,7 +22,7 @@ A simple and elegant Pomodoro Timer built using **React**, with light/dark theme
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/yourusername/pomodoro-timer.git
+git clone https://github.com/DhruvThatte/pomodoro-timer.git
 cd pomodoro-timer
 npm install
 npm start
