@@ -50,9 +50,31 @@ body {
 /* Controls */
 .controls {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   margin-top: 20px;
+}
+
+.time-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.main-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.time-button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.control-button {
+  min-width: 80px;
 }
 
 button {

@@ -43,6 +43,18 @@ function App() {
     setTimeLeft(workDuration);
   };
 
+  const handleIncreaseTime = () => {
+    if (!isRunning) {
+      setTimeLeft(prev => Math.min(prev + 60, 3600)); // Add 1 minute, max 1 hour
+    }
+  };
+
+  const handleDecreaseTime = () => {
+    if (!isRunning) {
+      setTimeLeft(prev => Math.max(prev - 60, 60)); // Subtract 1 minute, min 1 minute
+    }
+  };
+
   return (
     <div className={`app ${theme}`}>
       <div className="box">
@@ -55,6 +67,8 @@ function App() {
           isRunning={isRunning}
           toggleRunning={toggleRunning}
           resetTimer={resetTimer}
+          onIncreaseTime={handleIncreaseTime}
+          onDecreaseTime={handleDecreaseTime}
         />
       </div>
     </div>
